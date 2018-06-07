@@ -52,7 +52,7 @@ Note: The `fs.futimes()` method internally converts `stat.mtime` and `stat.atime
 - Values passed to the options must be of the expected type, otherwise they will be ignored.
 - All options can be passed a function instead of a value. The function will be called with the [vinyl] `File` object as its only argument and must return a value of the expected type for that option.
 
-| Name | Type | Default | Note |
+| name | type | default | note |
 |:----------------:|:-------------------:|-----------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | cwd | string | process.cwd() | The working directory the folder is relative to. |
 | mode | number | The `mode` of the input file (`file.stat.mode`) if any, or the process mode if the input file has no `mode` property. | The mode the files should be created with. This option is only resolved if the [vinyl] `File` is not symbolic. |
